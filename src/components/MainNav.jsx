@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-const MainNav = () => {
+export const MainNav = () => {
 
     const handleHamb = () => {
         // console.log('hanmmm');
@@ -23,5 +23,3 @@ const MainNav = () => {
         </div>
     )
 }
-
-export default MainNav

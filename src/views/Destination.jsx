@@ -1,6 +1,6 @@
-import MainNav from "../../src/components/mainNav.jsx"
 import data from '../../data.json'
 import { useState } from "react"
+import { MainNav } from '../components/MainNav'
 
 const Destination = () => {
     const [focus, setFocus] = useState(0)

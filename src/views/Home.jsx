@@ -1,5 +1,5 @@
-import MainNav from "../../src/components/mainNav.jsx"
 import { NavLink } from "react-router-dom"
+import { MainNav } from "../components/MainNav"
 
 const Home = () => {
     return (
