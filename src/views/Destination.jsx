@@ -1,4 +1,4 @@
-import MainNav from "../components/mainNav.jsx"
+import MainNav from "../../src/components/mainNav.jsx"
 import data from '../../data.json'
 import { useState } from "react"
 
