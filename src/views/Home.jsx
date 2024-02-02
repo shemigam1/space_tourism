@@ -1,9 +1,18 @@
 import { NavLink } from "react-router-dom"
 import { MainNav } from "../components/MainNav"
+import bgHome from '../assets/home/background-home-desktop.jpg'
 
 const Home = () => {
+
+    const style = {
+        backgroundImage: `url(${bgHome})`,
+        opcity: "100%",
+        transition: "200ms",
+    };
+
     return (
-        <div className="flex flex-col bg-[url('../../src/assets/home/background-home-desktop.jpg')] mix-blend-screen bg-no-repeat bg-cover md:h-screen h-full w-screen justify-center items-center overflow-x-hidden">
+        <div className="flex flex-col mix-blend-screen bg-no-repeat bg-cover md:h-screen h-full w-screen justify-center items-center overflow-x-hidden"
+            style={style}>
             <MainNav />
             <div className="flex flex-col md:flex-row items-center justify-around h-5/6 gap-10">
                 <div className="flex flex-col w-3/4 md:w-1/3 gap-3 h-full justify-center">

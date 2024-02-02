@@ -1,15 +1,22 @@
 import { useState } from "react"
 import data from '../../data.json'
 import { MainNav } from "../components/MainNav"
+import bg from '../assets/crew/background-crew-desktop.jpg'
 
 
 const Crew = () => {
+    const style = {
+        backgroundImage: `url(${bg})`,
+        opcity: "100%",
+        transition: "200ms",
+    };
     const [focus, setFocus] = useState(0)
     // console.log(data.destinations);
     const destinations = data.crew
     let imgUrl = `../../src${destinations[focus].images.png}`
     return (
-        <div className="flex flex-col bg-[url('../../src/assets/crew/background-crew-desktop.jpg')] mix-blend-screen bg-no-repeat bg-cover md:h-screen h-full overflow-x-hidden w-screen justify-center items-center">
+        <div className="flex flex-col mix-blend-screen bg-no-repeat bg-cover md:h-screen h-full overflow-x-hidden w-screen justify-center items-center"
+            style={style}>
             <MainNav />
             <div className="flex flex-col md:flex-row items-center justify-around h-5/6">
                 <div className="flex flex-col gap-10 w-3/4 md:w-1/3 order-2 md:order:1">
