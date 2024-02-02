@@ -1,9 +1,8 @@
 import { Routes, Route } from "react-router-dom"
-import Home from "./views/Home"
-import Destination from "./views/Destination"
-import Crew from "./views/Crew"
-import Technology from "./views/Technology"
-import Demo from './views/home2'
+import Home from "./views/Home.jsx"
+import Destination from "./views/Destination.jsx"
+import Crew from "./views/Crew.jsx"
+import Technology from "./views/Technology.jsx"
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
         <Route path="/destination" element={<Destination />} />
         <Route path="/crew" element={<Crew />} />
         <Route path="/technology" element={<Technology />} />
-        <Route path="/demo" element={<Demo />} />
       </Routes>
     </>
   )
